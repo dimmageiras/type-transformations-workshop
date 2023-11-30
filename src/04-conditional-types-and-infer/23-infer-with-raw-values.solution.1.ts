@@ -1,4 +1,4 @@
-import { Equal, Expect } from "../helpers/type-utils";
+import { Equal, Expect } from "@total-typescript/helpers";
 
 type GetDataValue<T> = T extends { data: any } ? T["data"] : never;
 

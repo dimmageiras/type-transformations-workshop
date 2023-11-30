@@ -1,4 +1,4 @@
-import { Equal, Expect } from "../helpers/type-utils";
+import { Equal, Expect } from "@total-typescript/helpers";
 
 export const programModeEnumMap = {
   GROUP: "group",
@@ -9,7 +9,7 @@ export const programModeEnumMap = {
   PLANNED_SELF_DIRECTED: "plannedSelfDirected",
 } as const;
 
-export type IndividualProgram = typeof programModeEnumMap[Exclude<
+export type IndividualProgram = (typeof programModeEnumMap)[Exclude<
   keyof typeof programModeEnumMap,
   "GROUP" | "ANNOUNCEMENT"
 >];

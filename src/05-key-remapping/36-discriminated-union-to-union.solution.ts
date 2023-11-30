@@ -1,4 +1,4 @@
-import { Equal, Expect } from "../helpers/type-utils";
+import { Equal, Expect } from "@total-typescript/helpers";
 
 type Fruit =
   | {
@@ -21,5 +21,5 @@ type TransformedFruit = {
 type tests = [
   Expect<
     Equal<TransformedFruit, "apple:red" | "banana:yellow" | "orange:orange">
-  >
+  >,
 ];

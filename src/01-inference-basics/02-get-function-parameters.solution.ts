@@ -1,4 +1,4 @@
-import { Equal, Expect } from "../helpers/type-utils";
+import { Equal, Expect } from "@total-typescript/helpers";
 
 const makeQuery = (
   url: string,
@@ -8,7 +8,7 @@ const makeQuery = (
       [key: string]: string;
     };
     body?: string;
-  },
+  }
 ) => {};
 
 type MakeQueryParameters = Parameters<typeof makeQuery>;

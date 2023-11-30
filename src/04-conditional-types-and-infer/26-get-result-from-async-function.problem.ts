@@ -1,4 +1,4 @@
-import { Equal, Expect } from "../helpers/type-utils";
+import { Equal, Expect } from "@total-typescript/helpers";
 
 const getServerSideProps = async () => {
   const data = await fetch("https://jsonplaceholder.typicode.com/todos/1");
@@ -18,5 +18,5 @@ type tests = [
       InferPropsFromServerSideFunction<typeof getServerSideProps>,
       { json: { title: string } }
     >
-  >
+  >,
 ];

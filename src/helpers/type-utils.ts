@@ -1,7 +1,6 @@
-export type Expect<T extends true> = T;
-
-export type Equal<X, Y> = (<T>() => T extends X ? 1 : 2) extends <
-  T,
->() => T extends Y ? 1 : 2
-  ? true
-  : false;
+export type Split<
+  S extends string,
+  Delimiter extends string,
+> = S extends `${infer Head}${Delimiter}${infer Tail}`
+  ? [Head, ...Split<Tail, Delimiter>]
+  : [S];

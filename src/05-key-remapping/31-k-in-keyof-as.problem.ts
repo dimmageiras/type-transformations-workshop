@@ -1,4 +1,4 @@
-import { Equal, Expect } from "../helpers/type-utils";
+import { Equal, Expect } from "@total-typescript/helpers";
 
 interface Attributes {
   firstName: string;
@@ -20,5 +20,5 @@ type tests = [
         getAge: () => number;
       }
     >
-  >
+  >,
 ];

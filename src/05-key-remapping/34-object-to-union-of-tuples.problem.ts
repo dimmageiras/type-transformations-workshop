@@ -1,4 +1,4 @@
-import { Equal, Expect } from "../helpers/type-utils";
+import { Equal, Expect } from "@total-typescript/helpers";
 
 interface Values {
   email: string;
@@ -16,5 +16,5 @@ type tests = [
       ValuesAsUnionOfTuples,
       ["email", string] | ["firstName", string] | ["lastName", string]
     >
-  >
+  >,
 ];

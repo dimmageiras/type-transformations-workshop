@@ -1,4 +1,4 @@
-import { Equal, Expect } from "../helpers/type-utils";
+import { Equal, Expect } from "@total-typescript/helpers";
 
 const frontendToBackendEnumMap = {
   singleModule: "SINGLE_MODULE",
@@ -7,7 +7,7 @@ const frontendToBackendEnumMap = {
 } as const;
 
 type BackendModuleEnum =
-  typeof frontendToBackendEnumMap[keyof typeof frontendToBackendEnumMap];
+  (typeof frontendToBackendEnumMap)[keyof typeof frontendToBackendEnumMap];
 
 type tests = [
   Expect<

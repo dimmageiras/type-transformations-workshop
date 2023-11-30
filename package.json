@@ -6,6 +6,7 @@
   "license": "GPL",
   "devDependencies": {
     "@total-typescript/exercise-cli": "^0.4.0",
+    "@total-typescript/helpers": "^0.0.1",
     "@types/node": "^20.10.0",
     "cross-fetch": "^4.0.0",
     "jsdom": "^23.0.0",

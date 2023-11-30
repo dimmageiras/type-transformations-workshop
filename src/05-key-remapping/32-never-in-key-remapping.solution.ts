@@ -1,4 +1,4 @@
-import { Equal, Expect } from "../helpers/type-utils";
+import { Equal, Expect } from "@total-typescript/helpers";
 
 interface Example {
   name: string;
@@ -25,5 +25,5 @@ type tests = [
       }
     >
   >,
-  Expect<Equal<OnlyIdKeys<{}>, {}>>
+  Expect<Equal<OnlyIdKeys<{}>, {}>>,
 ];

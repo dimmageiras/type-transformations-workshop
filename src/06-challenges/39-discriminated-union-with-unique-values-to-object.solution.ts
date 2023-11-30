@@ -1,4 +1,4 @@
-import { Equal, Expect } from "../helpers/type-utils";
+import { Equal, Expect } from "@total-typescript/helpers";
 
 type Route =
   | {
@@ -30,5 +30,5 @@ type tests = [
         "/admin/users": never;
       }
     >
-  >
+  >,
 ];

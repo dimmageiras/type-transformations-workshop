@@ -1,4 +1,4 @@
-import { Equal, Expect } from "../helpers/type-utils";
+import { Equal, Expect } from "@total-typescript/helpers";
 
 type DeepPartial<T> = T extends Array<infer U>
   ? Array<DeepPartial<U>>

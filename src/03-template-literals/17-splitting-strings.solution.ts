@@ -1,5 +1,5 @@
+import { Equal, Expect } from "@total-typescript/helpers";
 import { S } from "ts-toolbelt";
-import { Equal, Expect } from "../helpers/type-utils";
 
 type Path = "Users/John/Documents/notes.txt";
 

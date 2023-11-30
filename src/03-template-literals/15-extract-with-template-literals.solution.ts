@@ -1,4 +1,4 @@
-import { Equal, Expect } from "../helpers/type-utils";
+import { Equal, Expect } from "@total-typescript/helpers";
 
 type Routes = "/users" | "/users/:id" | "/posts" | "/posts/:id";
 

@@ -1,4 +1,4 @@
-import { Equal, Expect } from "../helpers/type-utils";
+import { Equal, Expect } from "@total-typescript/helpers";
 
 type Event = `log_in` | "log_out" | "sign_up";
 
@@ -14,5 +14,5 @@ type tests = [
         SIGN_UP: string;
       }
     >
-  >
+  >,
 ];

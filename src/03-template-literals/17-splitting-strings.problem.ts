@@ -2,7 +2,7 @@
 // import { S } from "ts-toolbelt";
 // https://millsp.github.io/ts-toolbelt/modules/string_split.html
 
-import { Equal, Expect } from "../helpers/type-utils";
+import { Equal, Expect } from "@total-typescript/helpers";
 
 type Path = "Users/John/Documents/notes.txt";
 

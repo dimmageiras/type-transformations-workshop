@@ -1,4 +1,4 @@
-import { Equal, Expect } from "../helpers/type-utils";
+import { Equal, Expect } from "@total-typescript/helpers";
 
 const parser1 = {
   parse: () => 1,
@@ -15,12 +15,12 @@ type GetParserResult<T> = T extends {
 }
   ? TResult
   : T extends () => infer TResult
-  ? TResult
-  : T extends {
-      extract: () => infer TResult;
-    }
-  ? TResult
-  : never;
+    ? TResult
+    : T extends {
+          extract: () => infer TResult;
+        }
+      ? TResult
+      : never;
 
 type tests = [
   Expect<Equal<GetParserResult<typeof parser1>, number>>,

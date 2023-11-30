@@ -1,4 +1,4 @@
-import { Equal, Expect } from "../helpers/type-utils";
+import { Equal, Expect } from "@total-typescript/helpers";
 
 export const fakeDataDefaults = {
   String: "Default string",
@@ -21,5 +21,5 @@ type tests = [
   Expect<Equal<IntType, number>>,
   Expect<Equal<FloatType, number>>,
   Expect<Equal<BooleanType, boolean>>,
-  Expect<Equal<IDType, string>>
+  Expect<Equal<IDType, string>>,
 ];
