@@ -1,6 +1,6 @@
 import { Equal, Expect } from "@total-typescript/helpers";
 
-type AddRoutePrefix<TRoute> = `/${TRoute}`;
+type AddRoutePrefix<TRoute extends string> = `/${TRoute}`;
 
 type tests = [
   Expect<Equal<AddRoutePrefix<"">, "/">>,

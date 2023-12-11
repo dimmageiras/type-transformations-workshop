@@ -1,6 +1,6 @@
 import { Equal, Expect } from "@total-typescript/helpers";
 
-type Maybe = unknown;
+type Maybe<T> = T | null | undefined;
 
 type tests = [
   Expect<Equal<Maybe<string>, string | null | undefined>>,

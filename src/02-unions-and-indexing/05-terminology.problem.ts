@@ -8,6 +8,7 @@
  * Which is which?
  */
 
+// This is a discriminated union
 type A =
   | {
       type: "a";
@@ -22,8 +23,10 @@ type A =
       c: string;
     };
 
+// This is a union
 type B = "a" | "b" | "c";
 
+// This is an enum
 enum C {
   A = "a",
   B = "b",

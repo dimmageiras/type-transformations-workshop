@@ -2,7 +2,7 @@ import { Equal, Expect } from "@total-typescript/helpers";
 
 type TemplateLiteralKey = `${"user" | "post" | "comment"}${"Id" | "Name"}`;
 
-type ObjectOfKeys = unknown;
+type ObjectOfKeys = Record<TemplateLiteralKey, string>;
 
 type tests = [
   Expect<

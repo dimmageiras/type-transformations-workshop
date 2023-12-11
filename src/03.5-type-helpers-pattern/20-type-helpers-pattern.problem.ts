@@ -1,6 +1,6 @@
 import { Equal, Expect } from "@total-typescript/helpers";
 
-type ReturnWhatIPassIn = unknown;
+type ReturnWhatIPassIn<T> = T;
 
 type tests = [
   Expect<Equal<ReturnWhatIPassIn<1>, 1>>,

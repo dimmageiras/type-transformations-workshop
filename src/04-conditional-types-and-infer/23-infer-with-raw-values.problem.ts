@@ -1,6 +1,11 @@
 import { Equal, Expect } from "@total-typescript/helpers";
 
-type GetDataValue<T> = unknown;
+type GetDataValue<T> = T extends { data: infer TInferredData }
+  ? TInferredData
+  : never;
+// type GetDataValue<T> = T extends Record<"data", unknown> ? T["data"] : never;
+
+type Test = GetDataValue<{ data: "hello" }>;
 
 type tests = [
   Expect<Equal<GetDataValue<{ data: "hello" }>, "hello">>,

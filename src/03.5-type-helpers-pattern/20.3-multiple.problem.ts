@@ -1,8 +1,11 @@
 import { Equal, Expect } from "@total-typescript/helpers";
 
-type CreateDataShape = {
-  data: unknown;
-  error: unknown;
+type CreateDataShape<
+  TData extends string | number | boolean,
+  TError extends Error,
+> = {
+  data: TData;
+  error: TError;
 };
 
 type tests = [

@@ -1,6 +1,11 @@
 import { Equal, Expect } from "@total-typescript/helpers";
 
-type GetParametersAndReturnType<T> = {
+type Function =
+  | (() => string)
+  | ((s: string) => void)
+  | ((n: number, b: boolean) => number);
+
+type GetParametersAndReturnType<T extends Function> = {
   params: Parameters<T>;
   returnValue: ReturnType<T>;
 };

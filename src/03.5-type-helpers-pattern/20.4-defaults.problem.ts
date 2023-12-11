@@ -1,6 +1,9 @@
 import { Equal, Expect } from "@total-typescript/helpers";
 
-type CreateDataShape<TData, TError> = {
+type CreateDataShape<
+  TData extends string | boolean,
+  TError extends Error | undefined = undefined,
+> = {
   data: TData;
   error: TError;
 };
